@@ -25,7 +25,7 @@ class UI(object):
     def update_levels(self, levels):
         column_heights = self.map_levels_to_term_size(levels)
 
-        self.main_window.clear()
+        self.main_window.erase()
 
         for i, height in enumerate(column_heights):
             if height == 0:
